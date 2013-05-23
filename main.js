@@ -134,6 +134,8 @@ function load(){
     ctx=c.getContext("2d");
     ctx.canvas.width  = d.clientWidth;
     ctx.canvas.height = d.clientHeight-4;
+    ctx.fillStyle="#FFF";
+    ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
     pxim = ctx.createImageData(1,1); // only do this once per page
     px  = pxim.data;                        // only do this once per page
     px[0]   = 0xff;//r
